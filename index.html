@@ -1,1 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>SURYAPET DISTRICT - MATTAMPALLY MANDAL</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#eef3f8;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0b5394;
+padding:15px 25px;
+color:#fff;
+box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+
+.logo{
+width:70px;
+height:70px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+}
+
+.title h1{
+font-size:30px;
+margin-bottom:5px;
+}
+
+.title h2{
+font-size:18px;
+font-weight:normal;
+}
+
+.search-box{
+width:95%;
+max-width:800px;
+margin:20px auto;
+}
+
+.search-box input{
+width:100%;
+padding:14px;
+font-size:17px;
+border:1px solid #ccc;
+border-radius:10px;
+outline:none;
+}
+
+.container{
+width:95%;
+max-width:1100px;
+margin:auto;
+padding-bottom:40px;
+}
+
+.place{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#fff;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.place:hover{
+transform:translateY(-3px);
+}
+
+.left{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.icon{
+width:55px;
+height:55px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+background:#dbeeff;
+font-size:28px;
+}
+
+.info h3{
+color:#0b5394;
+margin-bottom:5px;
+}
+
+.info p{
+color:#666;
+}
+
+.open-btn{
+background:#0b5394;
+color:#fff;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.open-btn:hover{
+background:#1565c0;
+}
+
+footer{
+background:#0b5394;
+color:#fff;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:12px;
+}
+
+.place{
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+}
+
+.open-btn{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="ou-logo.png" class="logo">
+
+<div class="title">
+<h1>SURYAPET DISTRICT</h1>
+<h2>MATTAMPALLY MANDAL</h2>
+</div>
+
+<img src="otbi-logo.png" class="logo">
+
+</header>
+
+<div class="search-box">
+<input type="text" id="search" placeholder="Search Place..." onkeyup="searchPlaces()">
+</div>
+
+<div class="container" id="places">
+  <!-- 1 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏢</div>
+<div class="info">
+<h3>BGP-MANDAL OFFICE</h3>
+<p>Government Office</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64463,80.86567" target="_blank">Open Map</a>
+</div>
+
+<!-- 2 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏧</div>
+<div class="info">
+<h3>BGP-ATM</h3>
+<p>ATM</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64475,80.86606" target="_blank">Open Map</a>
+</div>
+
+<!-- 3 -->
+<div class="place">
+<div class="left">
+<div class="icon">👮</div>
+<div class="info">
+<h3>BGP-POLICE STATION</h3>
+<p>Police Station</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64232,80.86613" target="_blank">Open Map</a>
+</div>
+
+<!-- 4 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏫</div>
+<div class="info">
+<h3>BGP-SCHOOL</h3>
+<p>School</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64176,80.86839" target="_blank">Open Map</a>
+</div>
+
+<!-- 5 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏢</div>
+<div class="info">
+<h3>BGP-MEESEVA CENTER</h3>
+<p>MeeSeva Center</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64386,80.87033" target="_blank">Open Map</a>
+</div>
+
+<!-- 6 -->
+<div class="place">
+<div class="left">
+<div class="icon">🛕</div>
+<div class="info">
+<h3>BGP-TEMPLE 1</h3>
+<p>Temple</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64235,80.87180" target="_blank">Open Map</a>
+</div>
+
+<!-- 7 -->
+<div class="place">
+<div class="left">
+<div class="icon">🛕</div>
+<div class="info">
+<h3>BGP-TEMPLE 2</h3>
+<p>Temple</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64161,80.87258" target="_blank">Open Map</a>
+</div>
+
+<!-- 8 -->
+<div class="place">
+<div class="left">
+<div class="icon">⚡</div>
+<div class="info">
+<h3>BGP-CURRENT OFFICE</h3>
+<p>Electricity Office</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64658,80.86022" target="_blank">Open Map</a>
+</div>
+
+<!-- 9 -->
+<div class="place">
+<div class="left">
+<div class="icon">⛽</div>
+<div class="info">
+<h3>BGP-PETROL BUNK</h3>
+<p>Petrol Pump</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64836,80.86695" target="_blank">Open Map</a>
+</div>
+
+<!-- 10 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏥</div>
+<div class="info">
+<h3>BGP-HEALTH CENTER</h3>
+<p>Hospital</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64514,80.86658" target="_blank">Open Map</a>
+</div>
+  <!-- 11 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏭</div>
+<div class="info">
+<h3>BGP-INDUSTRY</h3>
+<p>Industry</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64926,80.86598" target="_blank">Open Map</a>
+</div>
+
+<!-- 12 -->
+<div class="place">
+<div class="left">
+<div class="icon">💇</div>
+<div class="info">
+<h3>BGP-BEAUTY PARLOR</h3>
+<p>Beauty Parlour</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64084,80.87012" target="_blank">Open Map</a>
+</div>
+
+<!-- 13 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏫</div>
+<div class="info">
+<h3>BGP-ELECTRICAL TRAINING CENTER</h3>
+<p>Training Center</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64450,80.86092" target="_blank">Open Map</a>
+</div>
+
+<!-- 14 -->
+<div class="place">
+<div class="left">
+<div class="icon">👕</div>
+<div class="info">
+<h3>BGP-CLOTHES SHOP</h3>
+<p>Clothes Shop</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64247,80.86931" target="_blank">Open Map</a>
+</div>
+
+<!-- 15 -->
+<div class="place">
+<div class="left">
+<div class="icon">🥛</div>
+<div class="info">
+<h3>BGP-MILK PALOUR</h3>
+<p>Milk Dairy</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64154,80.87004" target="_blank">Open Map</a>
+</div>
+
+<!-- 16 -->
+<div class="place">
+<div class="left">
+<div class="icon">🛒</div>
+<div class="info">
+<h3>BGP-KIRANA STORE</h3>
+<p>Kirana Store</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64160,80.87019" target="_blank">Open Map</a>
+</div>
+
+<!-- 17 -->
+<div class="place">
+<div class="left">
+<div class="icon">🌾</div>
+<div class="info">
+<h3>BGP-FERTILIZERS SHOP</h3>
+<p>Fertilizer Shop</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64368,80.86989" target="_blank">Open Map</a>
+</div>
+
+<!-- 18 -->
+<div class="place">
+<div class="left">
+<div class="icon">⛪</div>
+<div class="info">
+<h3>BGP-CHURCH</h3>
+<p>Church</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64659,80.86096" target="_blank">Open Map</a>
+</div>
+
+<!-- 19 -->
+<div class="place">
+<div class="left">
+<div class="icon">🎓</div>
+<div class="info">
+<h3>BGP-GOVT JUNIOR COLLEGE</h3>
+<p>Junior College</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64461,80.86755" target="_blank">Open Map</a>
+</div>
+
+<!-- 20 -->
+<div class="place">
+<div class="left">
+<div class="icon">🏠</div>
+<div class="info">
+<h3>BGP-TSWRS HOSTEL</h3>
+<p>Hostel</p>
+</div>
+</div>
+<a class="open-btn" href="https://www.google.com/maps?q=17.64728,80.85693" target="_blank">Open Map</a>
+</div>
+  </div>
+
+<footer>
+© 2026 BHADRADRI KOTHAGUDEM DISTRICT - BHURGAMPADU MANDAL
+</footer>
+
+<script>
+
+function searchPlaces(){
+
+let input=document.getElementById("search").value.toLowerCase();
+
+let places=document.getElementsByClassName("place");
+
+for(let i=0;i<places.length;i++){
+
+let text=places[i].innerText.toLowerCase();
+
+if(text.includes(input)){
+places[i].style.
